@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Get in touch with FORMA. We’re here to help with orders, products, and anything else you need.">
+  <title>Contact — FORMA</title>
+  <style>
+    :root {
+      --ink: #20211e;
+      --muted: #77786f;
+      --paper: #f8f6f1;
+      --white: #fffefa;
+      --line: #e8e5dc;
+      --green: #52664e;
+      --green-dark: #394a36;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    a { color: inherit; }
+    .announcement { padding: 10px 16px; background: var(--green-dark); color: white; text-align: center; font-size: 12px; letter-spacing: .08em; }
+    header { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 6%; background: rgba(248,246,241,.96); border-bottom: 1px solid var(--line); }
+    .logo { color: var(--ink); font-family: var(--serif); font-size: 27px; font-weight: bold; letter-spacing: .16em; text-decoration: none; }
+    nav { display: flex; gap: 26px; }
+    nav a { font-size: 13px; text-decoration: none; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--green); }
+    main { padding: 78px 6% 90px; }
+    .intro { max-width: 680px; margin: 0 auto 48px; text-align: center; }
+    .eyebrow { color: var(--green); font-size: 11px; font-weight: bold; letter-spacing: .18em; text-transform: uppercase; }
+    h1, h2, p { margin-top: 0; }
+    h1 { margin: 16px 0; font-family: var(--serif); font-size: clamp(42px, 6vw, 64px); font-weight: normal; line-height: 1.05; }
+    .intro p { color: var(--muted); font-size: 15px; line-height: 1.8; }
+    .contact-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(250px, .8fr); max-width: 1040px; margin: 0 auto; background: var(--white); border: 1px solid var(--line); }
+    .form-wrap { padding: clamp(26px, 5vw, 54px); }
+    .form-wrap h2, .details h2 { margin-bottom: 10px; font-family: var(--serif); font-size: 27px; font-weight: normal; }
+    .form-wrap > p { margin-bottom: 28px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 16px; }
+    .field { display: flex; flex-direction: column; gap: 8px; }
+    .field.full { grid-column: 1 / -1; }
+    label { font-size: 12px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 2px; background: var(--paper); color: var(--ink); font: inherit; font-size: 13px; outline-color: var(--green); }
+    textarea { min-height: 145px; resize: vertical; }
+    .primary-button { justify-self: start; padding: 14px 22px; border: 0; border-radius: 2px; background: var(--green); color: white; font: inherit; font-size: 13px; cursor: pointer; transition: background .2s; }
+    .primary-button:hover { background: var(--green-dark); }
+    .form-status { grid-column: 1 / -1; min-height: 18px; margin: -8px 0 0; color: var(--green-dark); font-size: 13px; }
+    .details { padding: clamp(26px, 4vw, 42px); background: #e9e8df; }
+    .details > p { margin-bottom: 30px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .detail-block { padding: 19px 0; border-top: 1px solid #d9d7ce; }
+    .detail-block h3 { margin: 0 0 8px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+    .detail-block p, .detail-block a { margin: 0; color: #5f6059; font-size: 13px; line-height: 1.8; }
+    .detail-block a:hover { color: var(--green-dark); }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px 6%; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+    footer a { text-decoration: none; }
+    @media (max-width: 700px) {
+      header { flex-wrap: wrap; padding: 16px 5%; }
+      nav { gap: 18px; }
+      main { padding: 56px 5% 65px; }
+      .contact-layout { grid-template-columns: 1fr; }
+      .details { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+      .details h2, .details > p { grid-column: 1 / -1; }
+    }
+    @media (max-width: 460px) {
+      header { justify-content: center; }
+      nav { width: 100%; justify-content: center; }
+      form { grid-template-columns: 1fr; }
+      .field.full, .form-status { grid-column: auto; }
+      .details { display: block; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">Thoughtful essentials, made for everyday living</div>
+  <header>
+    <a class="logo" href="Atelier-4-travail-collaboratif/index.html" aria-label="FORMA home">FORMA</a>
+    <nav aria-label="Main navigation">
+      <a href="Atelier-4-travail-collaboratif/index.html">Shop</a>
+      <a href="Atelier-4-travail-collaboratif/index.html#about">Our story</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <span class="eyebrow">We’re here to help</span>
+      <h1 id="page-title">Get in touch</h1>
+      <p>Have a question about an order, a product, or anything else? Send us a note and our team will be happy to help.</p>
+    </section>
+    <section class="contact-layout" aria-label="Contact FORMA">
+      <div class="form-wrap">
+        <h2>Send us a message</h2>
+        <p>Fill in the form below and we’ll get back to you as soon as we can.</p>
+        <form id="contactForm">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field full">
+            <label for="subject">What can we help with?</label>
+            <select id="subject" name="subject" required>
+              <option value="" selected disabled>Select a topic</option>
+              <option>Order question</option>
+              <option>Product question</option>
+              <option>Returns and exchanges</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="primary-button" type="submit">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <aside class="details">
+        <h2>Contact details</h2>
+        <p>We’re a small team and love hearing from you. We usually reply within two business days.</p>
+        <div class="detail-block">
+          <h3>Email</h3>
+          <a href="mailto:hello@forma.example">hello@forma.example</a>
+        </div>
+        <div class="detail-block">
+          <h3>Customer care</h3>
+          <p>Monday–Friday<br>9:00 am–5:00 pm</p>
+        </div>
+        <div class="detail-block">
+          <h3>Follow along</h3>
+          <p>New pieces and everyday inspiration, coming soon.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    <span>© <span id="year"></span> FORMA. Everyday essentials.</span>
+    <a href="Atelier-4-travail-collaboratif/index.html">Continue shopping</a>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("contactForm").addEventListener("submit", event => {
+      event.preventDefault();
+      document.getElementById("formStatus").textContent = "Thanks for reaching out! Please email us directly at hello@forma.example so we can receive your message.";
+      event.target.reset();
+    });
+  </script>
+</body>
+</html>
