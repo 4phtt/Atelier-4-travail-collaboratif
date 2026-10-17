@@ -1,0 +1,41 @@
+7 QUESTIONS DE SYNTHÈSE — GIT ET GITHUB
+
+1.  Quelle est la différence entre un dépôt local et un dépôt distant ?
+
+-   Dépôt local : stocké sur notre ordinateur.
+-   Dépôt distant : hébergé sur une plateforme comme GitHub.
+
+2.  Pourquoi chaque développeur travaille-t-il sur une branche distincte
+    ? Pour travailler indépendamment sans modifier directement le code
+    des autres développeurs.
+
+3.  Quel est le rôle de origin dans git push origin contact ? origin est
+    le nom du dépôt distant vers lequel on envoie la branche contact.
+
+4.  Pourquoi utilise-t-on –set-upstream lors du premier push d’une
+    branche ? Pour associer la branche locale à la branche distante et
+    faciliter les prochains git push et git pull.
+
+5.  Quelle est la différence entre git push et une Pull Request ?
+
+-   git push : envoie les modifications vers le dépôt distant.
+-   Pull Request : demande de fusionner une branche dans une autre après
+    vérification.
+
+6.  Une Pull Request fusionne-t-elle automatiquement la branche ?
+    Expliquez. Non, elle doit être acceptée et fusionnée manuellement,
+    sauf si une automatisation est configurée.
+
+7.  Pourquoi faut-il récupérer la branche principale après une fusion ?
+    Pour obtenir les dernières modifications et synchroniser son travail
+    avec la branche principale.
+
+8.  Combien de branches ont été créées au cours de l’atelier, et quelles
+    sont leurs fonctions ? Cela dépend de l’atelier réalisé.
+    Généralement :
+
+-   main : contient la version principale du projet.
+-   contact : permet de développer la fonctionnalité Contact.
+
+Remarque : pour la question 8, il faut vérifier les branches réellement
+créées pendant votre atelier.
